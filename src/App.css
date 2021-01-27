@@ -1,0 +1,133 @@
+.header{
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+@media (max-width: 468px){
+  .header{
+    height: 100vh;
+    width: 100%;
+  }
+  .sidecolor{
+    display: none;
+  }
+  .sideimage{
+    display: none;
+  }
+}
+.middleheader{
+  margin-top: 120px;
+}
+.sidecolor{
+  background-color: black;
+  height:100vh;
+  width: 30%;
+  position: absolute;
+  right: 0;
+}
+.sideimage{
+  height:350px;
+   width:580px
+}
+.our{
+  text-align: center;
+  color:paleturquoise;
+}
+.make-appointment{
+  background-image: url(./images/appointmentBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 420px;
+  background-position: center center;
+}
+
+.make-appointment::before{
+  content:  "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(36, 41, 73);
+  opacity: .8;
+  top: 0;
+}
+
+.make-appointment img{
+  height: 550px;
+  transform: translateY(-130px);
+}
+.testimonials .container{
+  
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 150px;
+}
+.testimonials .card{
+  border-color: transparent;
+}
+
+.testimonials .card .card-footer{
+  background: transparent;
+  border: 0;
+}
+.blogs .card{
+  border: 0;
+}
+.blogs .card-header{
+  border: 0;
+  background-color: transparent;
+
+
+}
+
+.blogs .card:hover{
+  background-image: linear-gradient(75deg, #19D3AE,#0fcfec);
+  color: #fff !important;
+  transition:  .1s  all ease-in-out !important;
+}
+.blogs .card:hover .card-body{
+ 
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 60%;
+}
+.blogs .card:hover h6,
+.blogs .card:hover p
+{
+  color: #fff !important;
+
+}
+.blogs .card:hover img{
+  display: none;
+}
+.contact{
+  background-image: url(./images/appointmentBg.png);
+  position: relative;
+  z-index: 1;
+}
+.contact::before{
+  position: absolute;
+  content: "";
+  top:0;
+  width: 100%;
+  height: 100%;
+  background: rgb(12, 11, 27);
+  opacity: .9;
+  z-index: -1;
+}
+.sidebar{
+  background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+  position: fixed;
+}
+.sidebar li{
+  margin-bottom: 2em;
+}
+.sidebar li:hover span{
+  display: inline-block;
+  transform: translate(5px);
+}
+.sidebar svg{
+  margin-right: 5px;
+}
